@@ -11,9 +11,23 @@
 </template>
 
 <script>
+import axios from 'axios'
 
 export default {
-
+  data () {
+    return {
+      tweet: ''
+    }
+  },
+  methods: {
+    createTweet () {
+      if(this.tweet.length > 280 || this.tweet.length == 0 || this.tweet == null) {
+        console.log('Invalid Tweet')
+      } else {
+        console.log('Valid Tweet')
+      }
+    }
+  }
 }
 
 </script>
