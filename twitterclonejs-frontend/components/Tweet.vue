@@ -21,7 +21,7 @@
 <script>
 
 export default {
-
+  props: ['author-name', 'author-handle', 'tweet-content']
 }
 
 </script>
