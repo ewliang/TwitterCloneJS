@@ -10,12 +10,15 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'The frontend interface for the Twitter Clone JS project.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
+  css: [
+    '~/static/style/style.css'
+  ],
   loading: { color: '#3B8070' },
   /*
   ** Build configuration
