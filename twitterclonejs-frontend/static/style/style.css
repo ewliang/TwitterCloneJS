@@ -41,3 +41,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Shapes */
+.circular {
+	border-radius: 50%;
+}
+
+/* Components */
+.btn {
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 100px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #1da1f2;
+	border: 1px solid #1da1f2;
+}
+
+.btn-primary:hover {
+	background-color: #58cef2;
+	border: 1px solid #58cef2;
+}
+
+.btn-inverted {
+	color: #1da1f2;
+	background-color: transparent;
+	border: 1px solid #1da1f2;
+}
+
+.btn-inverted:hover {
+	background-color: #2fc2ef;
+}
