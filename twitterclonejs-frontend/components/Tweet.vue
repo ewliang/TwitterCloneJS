@@ -1,18 +1,18 @@
 <template>
   <div class = "tweet-container">
-    <img src = "" class = "" alt = "">
+    <img src = "" class = "circular" alt = "">
     <div>
       <div>
-        <strong class = "name">Eric Liang</strong>
-        <p class = "username">@ericwliang</p>
+        <strong class = "name">{{ author-name }}</strong>
+        <p class = "username">{{ author-handle }}</p>
       </div>
       <div>
         <p class = "tweet-content">
-          Looking for a web developer? Hire me! I help small businesses and startups get their website up and running.
+          {{ tweet-content }}
         </p>
       </div>
       <ul class = "">
-        <li><a href = ""><i class = ""><3</i> 0 </a></li>
+        <li><a href = ""><i class = "fa fa-heart-o"></i> 0 </a></li>
       </ul>
     </div>
   </div><!--end tweet-container-->
