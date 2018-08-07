@@ -7,6 +7,10 @@ let TweetSchema = new Schema(
     content: {
       type: String,
       unique: true
+    },
+    author: {
+      type: Schema.Types.ObjectId,
+      ref: 'User'
     }
   },
   {
