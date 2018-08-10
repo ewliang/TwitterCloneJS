@@ -25,6 +25,16 @@ export default {
         console.log('Invalid Tweet')
       } else {
         console.log('Valid Tweet')
+        var newTweet = {
+          tweet: this.tweet
+        }
+        axios.post('http://localhost:4000/tweet', newTweet)
+        .then(response => {
+          console.log("Successfully created new Tweet!")
+        })
+        .catch(error => {
+          console.log(error)
+        })
       }
     }
   }
