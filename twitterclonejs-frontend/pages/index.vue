@@ -2,6 +2,7 @@
   <div class = "container-fluid">
     <div class = "">
       <div class = "sidebar">
+
       </div><!--end sidebar-->
       <main>
         <TweetInput></TweetInput>
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import ProfileOverviewPublic from '~/components/ProfileOverview-Public.vue'
 import TweetInput from '~/components/TweetInput.vue'
 import Tweet from '~/components/Tweet.vue'
 
