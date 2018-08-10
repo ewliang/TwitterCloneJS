@@ -15,7 +15,8 @@ let UserSchema = new Schema(
     password: {
       type: String,
       required: true
-    }
+    },
+    bio: String
   },
   {
     timestamps: true
