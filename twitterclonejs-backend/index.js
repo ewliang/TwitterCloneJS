@@ -18,7 +18,6 @@ db.once('open', function() {
 });
 
 //Routes Files
-const index = require('./routes/index');
 const tweet = require('./routes/tweet');
 
 app.use(cors());
@@ -30,7 +29,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/'));
 
 //Routes Paths
-app.use('/', index);
 app.use('/tweet', tweet);
 
 // error handler
