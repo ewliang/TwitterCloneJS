@@ -20,7 +20,7 @@ module.exports = {
   },
 
   getTweetsByUserID: function(req, res) {
-    Tweet.find({}, (err, data) => {
+    Tweet.findById(req.params.username, (err, data) => {
       if(err) {
         res.status(404).json({
           message: err
