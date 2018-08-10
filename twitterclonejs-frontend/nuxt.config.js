@@ -19,6 +19,10 @@ module.exports = {
   css: [
     '~/static/style/style.css'
   ],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth'
+  ],
   loading: { color: '#3B8070' },
   /*
   ** Build configuration
