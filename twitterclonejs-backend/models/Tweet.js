@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 let TweetSchema = new Schema(
   {
-    content: {
+    tweet: {
       type: String,
       unique: true
     },
